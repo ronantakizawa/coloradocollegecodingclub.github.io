@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NAME's Portfolio</title>
-    <!-- Bootstrap CSS -->
+    <!-- External Library for Styling -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <!-- Custom CSS -->
+    <!-- Custom Styling -->
     <style>
         #about, #skills, #projects {
             text-align: center;
@@ -24,39 +24,49 @@
             box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Adding a shadow to the cards */
         }
 
-            #skills .row, #projects .row {
-                align-items: flex-start;
-                justify-content: center;
-                gap: 20px;
-            }
+        #skills .row, #projects .row {
+            align-items: flex-start;
+            justify-content: center;
+            gap: 20px;
+        }
+        .profilepic {
+           width: 250px;
+        }
     </style>
 </head>
 <body>
 
     <!-- About Section -->
     <div class="container" id="about">
+        <!-- Title #1 -->
         <h1>NAME's Portfolio</h1>
-        <img class="card-img-top" src="project-image.jpg" alt="Profile Picture">
-        <p>Welcome to my portfolio!</p>
+        <!-- Profile Image -->
+        <img class="profilepic" src="profilepic.png" alt="Profile Picture">
+        <br></br>
+        <!-- Intro Text #2 -->
         <p>I am a passionate software engineer with a love for developing innovative applications.</p>
     </div>
 
     <!-- Skills Section -->
     <section id="skills">
         <div class="container">
+            <!-- Skill Title -->
             <h2>Skills</h2>
-                <!-- Skill Item -->
+                <!-- Skill Items -->
                 <div class="row">
+                    <!-- Item #1 -->
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Python</h5>
                         </div>
                     </div>
+                    <!-- Item #2 -->
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Java</h5>
                         </div>
                     </div>
+                    <!-- Item #3 -->
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">HTML</h5>
@@ -71,19 +81,21 @@
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
+            <!-- Projects Title -->
             <h2>Projects</h2>
             <div class="row">
-                <!-- Project Item -->
+                <!-- Item #1 -->
                     <div class="card">
-                        <img class="card-img-top" src="./2.png" alt="Project Image">
+                        <img class="card-img-top" src="project1.png" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">Project Title</h5>
                             <p class="card-text">Brief project description.</p>
                             <a href="https://google.com" class="btn btn-primary">View Project</a>
                         </div>
                     </div>
+                    <!-- Item #2 -->
                     <div class="card">
-                        <img class="card-img-top" src="project-image.jpg" alt="Project Image">
+                        <img class="card-img-top" src="project2.png" alt="Project Image">
                         <div class="card-body">
                             <h5 class="card-title">Project Title</h5>
                             <p class="card-text">Brief project description.</p>
@@ -95,7 +107,7 @@
             </div>
     </section>
 
-    <!-- Bootstrap JS -->
+    <!-- External Library for Styling -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
